@@ -1,0 +1,519 @@
+{
+    margin:0;
+    padding 0;
+    box-sizing:boreder-box;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+ .navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+ }
+ .navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+  }
+
+
+nav ul li a:hover{
+    color:palevioletred;
+    padding: 8px 25px;
+    align-items: left;
+    font-weight: bold;
+    justify-content: left;
+
+
+}
+h4,h2{
+    margin-top: 0;
+    text-align: top;
+    color: white;
+   
+
+}
+a:hover, a:active {
+    color: rgb(177, 139, 139);
+    text-decoration: underline;
+    background-color: transparent;
+}
+a:link, a:visited {
+    color: rgb(47, 70, 91);
+    text-decoration: none;
+    background-color: transparent;
+   
+}
+
+
+    
+  .navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+  }
+  .navbar ul li  a{
+    text-decoration: none;
+    color:white;
+    padding:8px 25px;
+    transition: all .5s ease;
+  }
+  .navbar ul li a:hover{
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 10px white;
+  }
+
+  .navbar ul li h3 a{
+    text-decoration:none;
+    color:white;
+    padding:8px 25px;
+    transition: all .5s ease;
+  }
+
+  .navbar ul li h5 a{
+    color: black;
+  }
+  *{
+    font-family:Gill Sans, sans serif;
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+h5{
+  text-align: center;
+}
+.skill{
+  width: 500px;
+  margin: 60px auto;
+  color:black;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.skill li{
+  margin:20px 0;
+  padding: 10px;
+}
+.bar{
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  
+}
+.bar:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgba(236,0,140,1)0%, rgba(252,103,103,1)100%);
+}
+.html{
+  width: 90%;
+  animation: html 3s;
+}
+.css{
+  width: 70%;
+  animation: css 3s;
+}
+.php{
+  width: 45%;
+  animation: php 3s;
+} 
+.javascript{
+  width: 60%;
+  animation: javascript 3s;
+}
+@keyframes html{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+
+@keyframes css{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+@keyframes php{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 45%;
+  }
+}
+@keyframes javascript{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+  .navbar ul li h3:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+  }
+
+/*Home section*/
+#home{
+    display:flex;
+    flex-direction:column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    background: url('baloni.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index:-1;
+    opacity:.8;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+   /* border:1px solid white;*/
+    align-items: center;
+    position:absolute;
+    top:30%;
+    right: 10%;
+  }
+  .headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+  }
+  .btn{
+    padding:10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+  }
+  .btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+  }
+  /*about section*/
+  #about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    background:url('nyc2.jpg');no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: white;
+    height: 900px;
+    width: 100%;
+    z-index:-1;
+    opacity:.8;
+    
+   
+  }
+  #pic{
+    display: flex;
+
+  }
+  #pic img{
+    width: 580px;
+    height: 400px;
+  }
+  #intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+  }
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+/*Portfolio section*/
+#travel{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.5);
+ color: white;
+ align-items: center;
+ padding: 20px;
+   
+}
+p::first-letter{
+  font-size: 2em ;
+  font-weight: bold;
+  color: red;
+
+
+}
+#travel
+
+
+
+.hobby h2{
+  text-transform: uppercase;
+	color: blueviolet;
+  
+  
+}
+.brand h1 span {
+	color: crimson;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+   
+
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+    margin: 10px;
+
+}
+
+li:first-child {
+  color:red;
+  
+}
+
+#hobby{
+  display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    background:url('baloni.jpg'); no-repeat center center/cover;
+    background-color: rgb(0, 0, 0);
+    color:black;
+    border: black;
+    font-weight: bolder;
+    height: 900px;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.8;
+    margin-bottom: 50px;
+}
+#slike{
+  display: flex;
+  background-color: antiquewhite;
+    color:blueviolet;
+    
+    
+
+}
+#slike img{
+  width: 575px;
+  height: 400px;
+
+}
+#intro{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+  
+
+}
+#intro h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: blueviolet;
+  
+}
+#intro p{
+  color: black;
+  border: 3rem;
+}
+
+/*contact section*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 20px;
+    width: 10;
+    margin: 40px;
+    border: none;
+    outline: none;
+
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  justify-self: left;
+  align-items: left;
+  
+
+}
+.section{
+  margin: 0;
+  padding: 0;
+  height: 100;
+  display: flex;
+  justify-content: left;
+
+}
+.slider{
+  width: 700px;
+  height: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.slide{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+.slide input{
+  display: none;
+
+}
+.st{
+  width: 20%;
+  transition: 2s;
+
+}
+.st img{
+  width: 655px;
+  height: 560px;
+  margin-top: -50px;
+
+}
+.nav-m{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  justify-content: center;
+  display: flex;
+}
+.m-btn{
+  border: 2px solid blueviolet;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+
+}
+.m-btn:not(:last-child){
+  margin-right: 30px;
+}
+.m-btn:hover{
+  background-color: black;
+}
+#radio1:checked ~.first{
+  margin-left: 0;
+
+}
+#radio2:checked ~.first{
+  margin-left: -20%;
+  
+}
+#radio3:checked ~.first{
+  margin-left: -40%;
+  
+}
+#radio4:checked ~.first{
+  margin-left: -60%;
+  
+}
+
+.nav-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
+}
+.nav-auto div{
+  border: 2px solid whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.nav-auto div:not(:last-child){
+  margin-right: 30px;
+  justify-content: center;
+
+}
+#radio1:checked~ .nav-auto .a-b1{
+  background-color: whitesmoke;
+}
+#radio2:checked~ .nav-auto .a-b2{
+  background-color: whitesmoke;
+}
+#radio3:checked~ .nav-auto .a-b3{
+  background-color: whitesmoke;
+}
+#radio4:checked~ .nav-auto .a-b4{
+  background-color: whitesmoke;
+}
